@@ -9,13 +9,6 @@ header_pages:
   #- about.md
   #- contact.md
 
-
-collections:
-  categories:
-    output: true
-
-permalink: /:categories/:title
-
 style: dark
 
 footer: '<a href="https://x.com/">X</a> | <a href="https://github.com/">GitHub</a> | <a href="https://mirror.xyz/">Mirror</a>'
