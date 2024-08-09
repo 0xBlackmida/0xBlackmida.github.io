@@ -26,7 +26,6 @@ layout: default
   <a href="{{ post.url | relative_url }}"> 👉 Tutti gli Articoli </a>
 {%- endif -%}
 
-
 {%- assign unique_categories = "" | split: "" -%}
 
 {%- for post in site.posts -%}
@@ -39,36 +38,10 @@ layout: default
 {%- endfor -%}
 
 {%- if unique_categories.size > 0 -%}
-<p>Sottocartelle (categorie) trovate:</p>
+<p>Categorie:</p>
 <ul>
   {%- for category in unique_categories -%}
-    <li>{{ category }}</li>
+    <li><a href="{{ site.baseurl }}/categories/{{ category | downcase | replace: ' ', '-' }}">{{ category }}</a></li>
   {%- endfor -%}
 </ul>
 {%- endif -%}
-
-{%- if unique_categories.size > 0 -%}
-<p>Articoli per categoria:</p>
-<ul>
-  {%- for category in unique_categories -%}
-    <li><strong>{{ category }}</strong>
-      <ul>
-        {%- for post in site.posts -%}
-          {%- if post.categories contains category -%}
-            <li>
-              📌 [ {{ post.date | date: "%d-%m-%Y" }} ] 
-              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-              <br />
-              🏷️ Categoria:
-              <b class="{{ post.categories }}">{{ post.categories }}</b>
-            </li>
-          {%- endif -%}
-        {%- endfor -%}
-      </ul>
-    </li>
-  {%- endfor -%}
-</ul>
-{%- endif -%}
-
-
-
