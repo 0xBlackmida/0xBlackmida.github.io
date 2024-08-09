@@ -36,12 +36,11 @@ layout: default
     {%- endunless -%}
   {%- endfor -%}
 {%- endfor -%}
+<p></p>
 
 {%- if unique_categories.size > 0 -%}
 <p>Categorie:</p>
-<ul>
   {%- for category in unique_categories -%}
-    <li><a href="{{ site.baseurl }}/categories/{{ category | downcase | replace: ' ', '-' }}">{{ category }}</a></li>
+     | <a href="{{ site.baseurl }}/categories/{{ category | downcase | replace: ' ', '-' }}">{{ category }}</a> |
   {%- endfor -%}
-</ul>
 {%- endif -%}
