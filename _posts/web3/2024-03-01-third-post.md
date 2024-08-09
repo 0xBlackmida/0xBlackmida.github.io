@@ -2,7 +2,7 @@
 layout: post
 title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...
 date: 2024-03-01 09:00:00 +0100
-categories: tech
+categories: web3
 pinned: true
 ---
 

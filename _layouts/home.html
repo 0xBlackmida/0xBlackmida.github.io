@@ -27,3 +27,25 @@ layout: default
 {%- endif -%}
 
 
+{%- assign unique_categories = "" | split: "" -%}
+
+{%- for post in site.posts -%}
+  {%- assign category_list = post.categories -%}
+  {%- for category in category_list -%}
+    {%- unless unique_categories contains category -%}
+      {%- assign unique_categories = unique_categories | push: category -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- if unique_categories.size > 0 -%}
+<p>Sottocartelle (categorie) trovate:</p>
+<ul>
+  {%- for category in unique_categories -%}
+    <li>{{ category }}</li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}
+
+
+
