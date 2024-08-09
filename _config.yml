@@ -10,7 +10,7 @@ header_pages:
   #- contact.md
 
 
-style: dark
+style: light
 
 footer: '<a href="https://x.com/">X</a> | <a href="https://github.com/">GitHub</a> | <a href="https://mirror.xyz/">Mirror</a>'
 
