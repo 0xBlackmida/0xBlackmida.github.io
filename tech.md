@@ -9,8 +9,8 @@ category: tech
   {%- for post in site.posts -%}
     {%- if post.categories contains page.category -%}
       <li>
-        📌 [ {{ post.date | date: "%d-%m-%Y" }} ] 
-        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          [ {{ post.date | date: "%d-%m-%Y" }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <p></p>
       </li>
     {%- endif -%}
   {%- endfor -%}
