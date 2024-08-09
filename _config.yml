@@ -4,8 +4,8 @@ baseurl: "/"
 url: "https://blackmida0x.github.io"
 
 header_pages:
-  - pages/index.md
-  - pages/lab.md
+  - index.md
+  - lab.md
   #- about.md
   #- contact.md
 
