@@ -1,5 +1,6 @@
 ---
 layout: default
+category: tech
 ---
 
 <h1>Articoli nella categoria: {{ page.category | capitalize }}</h1>
