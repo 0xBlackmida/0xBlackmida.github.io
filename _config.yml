@@ -1,0 +1,19 @@
+title: 'blackmida0x.github.io'
+description: "Tech hub"
+baseurl: "/"
+url: "https://blackmida0x.github.io"
+
+header_pages:
+  - index.md
+  - lab.md
+  #- about.md
+  #- contact.md
+
+
+style: dark
+
+footer: '<a href="https://x.com/">X</a> | <a href="https://github.com/">GitHub</a> | <a href="https://mirror.xyz/">Mirror</a>'
+
+# Build settings
+markdown: kramdown
+#remote_theme: b2a3e8/jekyll-theme-console
