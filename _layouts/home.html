@@ -26,9 +26,9 @@ layout: default
       {%- endfor -%}
     {%- endif -%}
 
-    <!-- Linea superiore -->
+    <!-- Linea superiore con + all'inizio e alla fine -->
     <div style="padding-bottom: 5px;">
-      {%- for i in (0..total_length) -%}_ {%- endfor -%}
+      +{%- for i in (0..total_length) -%}_ {%- endfor -%}+
     </div>
 
     <!-- Categorie con trattini -->
@@ -46,9 +46,9 @@ layout: default
       |
     </div>
 
-    <!-- Linea inferiore -->
+    <!-- Linea inferiore con + all'inizio e alla fine -->
     <div style="padding-top: 5px;">
-      {%- for i in (0..total_length) -%}- {%- endfor -%}
+      +{%- for i in (0..total_length) -%}- {%- endfor -%}+
     </div>
   </div>
 </center>
