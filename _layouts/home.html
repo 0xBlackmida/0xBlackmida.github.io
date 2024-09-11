@@ -18,24 +18,28 @@ layout: default
 {%- endfor -%}
 
 <center>
-  <div style="font-family: monospace; border: 1px solid black; padding: 10px; display: inline-block; white-space: nowrap;">
-    <div style="border-bottom: 1px solid black; padding-bottom: 5px;">
-      _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  <div style="font-family: monospace; border: 1px solid black; padding: 10px; display: inline-block; text-align: center;">
+    <div style="padding-bottom: 5px;">
+      {%- assign line_length = unique_categories | size | times: 10 -%}
+      {%- for i in (0..line_length) -%}_ {%- endfor -%}
     </div>
     <div style="display: inline;">
       |
       {%- if unique_categories.size > 0 -%}
         {%- for category in unique_categories -%}
-          <span style="margin: 0 5px;">{{ category }}</span>{%- if forloop.last == false -%} - {%- endif -%}
+          <a href="{{ site.baseurl }}/{{ category | downcase | replace: ' ', '-' }}" style="text-decoration: none; margin: 0 5px;">
+            {{ category }}
+          </a>{%- if forloop.last == false -%} - {%- endif -%}
         {%- endfor -%}
       {%- endif -%}
       |
     </div>
-    <div style="border-bottom: 1px solid black; padding-top: 5px;">
-      - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    <div style="padding-top: 5px;">
+      {%- for i in (0..line_length) -%}- {%- endfor -%}
     </div>
   </div>
 </center>
+
 
 <!-- LISTA GENERALE DEI POST PINNED IN TUTTE LE CATEGORIE -->
 {%- if site.posts.size > 0 -%}
