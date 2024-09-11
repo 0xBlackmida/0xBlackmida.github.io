@@ -38,7 +38,7 @@ layout: default
         {%- for category in unique_categories -%}
           <span style="margin: 0 5px;">
             <a href="{{ site.baseurl }}/{{ category | downcase | replace: ' ', '-' }}" style="text-decoration: none;">
-               <b class="{{ post.categories }}"> 🏷️ {{ category }}</b>
+               🏷️{{ category }}
             </a>
           </span>{%- if forloop.last == false -%} - {%- endif -%}
         {%- endfor -%}
