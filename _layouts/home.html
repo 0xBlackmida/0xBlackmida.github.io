@@ -26,9 +26,9 @@ layout: default
       {%- endfor -%}
     {%- endif -%}
 
-    <!-- Linea superiore con + all'inizio e alla fine -->
+    <!-- Linea superiore -->
     <div style="padding-bottom: 5px;">
-      +{%- for i in (0..total_length) -%}_ {%- endfor -%}+
+      {%- for i in (0..total_length) -%}_ {%- endfor -%}
     </div>
 
     <!-- Categorie con trattini -->
@@ -38,7 +38,7 @@ layout: default
         {%- for category in unique_categories -%}
           <span style="margin: 0 5px;">
             <a href="{{ site.baseurl }}/{{ category | downcase | replace: ' ', '-' }}" style="text-decoration: none;">
-              {{ category }}
+               <b class="{{ post.categories }}"> 🏷️ {{ category }}</b>
             </a>
           </span>{%- if forloop.last == false -%} - {%- endif -%}
         {%- endfor -%}
@@ -46,9 +46,9 @@ layout: default
       |
     </div>
 
-    <!-- Linea inferiore con + all'inizio e alla fine -->
+    <!-- Linea inferiore -->
     <div style="padding-top: 5px;">
-      +{%- for i in (0..total_length) -%}- {%- endfor -%}+
+      {%- for i in (0..total_length) -%}- {%- endfor -%}
     </div>
   </div>
 </center>
