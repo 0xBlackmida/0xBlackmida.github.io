@@ -1,5 +1,5 @@
 ---
-title: ~/
+title: ~/HOME
 layout: home
 permalink: /
 ---

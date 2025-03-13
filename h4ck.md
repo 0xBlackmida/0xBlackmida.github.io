@@ -1,6 +1,6 @@
 ---
 layout: page
-title: h4ck
+title: /h4ck
 permalink: /h4ck
 ---
 
