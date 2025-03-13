@@ -17,14 +17,14 @@ layout: default
   {%- endfor -%}
 {%- endfor -%}
 
-
+<p>CATEGORIE: 
   {%- if unique_categories.size > 0 -%}
     {%- for category in unique_categories -%}
       {%- if forloop.first == false -%} | {%- endif -%}
-      CATEGORIE: <a href="{{ site.baseurl }}/{{ category | downcase | replace: ' ', '-' }}" style="text-decoration: none !important;"> 🏷️{{ category }} </a>
+       <a href="{{ site.baseurl }}/{{ category | downcase | replace: ' ', '-' }}" style="text-decoration: none !important;"> 🏷️{{ category }} </a>
     {%- endfor -%}
   {%- endif -%}
-
+</p>
 
 
 <!-- FINE MENU CATEGORIE -->
