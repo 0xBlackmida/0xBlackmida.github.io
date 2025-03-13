@@ -67,8 +67,7 @@ layout: default
       {%- assign date_format = "%d-%m-%Y" -%}
       📌 [ {{ post.date | date: date_format }} ] <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       <br />
-      🏷️ categoria:
-      <b class="{{ post.categories }}">{{ post.categories }}</b>
+      🏷️ <b class="{{ post.categories }}">{{ post.categories }}</b>
       <p></p>
     </li>
     {%- endif -%}
