@@ -24,16 +24,16 @@ layout: default
     {%- assign total_length = 0 -%}
     {%- if unique_categories.size > 0 -%}
       {%- for category in unique_categories -%}
-        {%- assign total_length = total_length | plus: category.size | plus: 3 -%}  <!-- 3 = 2 spaces + 1 dash -->
+        {%- assign total_length = total_length | plus: category.size | plus: 3 -%}   3 = 2 spaces + 1 dash
       {%- endfor -%}
     {%- endif -%}
 
-    <!-- Linea superiore -->
+     Linea superiore 
     <div style="padding-bottom: 5px;">
       {%- for i in (0..total_length) -%}_ {%- endfor -%}
     </div>
 
-    <!-- Categorie con trattini -->
+     Categorie con trattini 
     <div style="display: inline;">
       |
       {%- if unique_categories.size > 0 -%}
@@ -48,7 +48,7 @@ layout: default
       |
     </div>
 
-    <!-- Linea inferiore -->
+     Linea inferiore 
     <div style="padding-top: 5px;">
       {%- for i in (0..total_length) -%}- {%- endfor -%}
     </div>
