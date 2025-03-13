@@ -1,10 +1,10 @@
 ---
 layout: page
-title: CATEGORIE
-permalink: /lab
+title: CAT
+permalink: /cat
 ---
 
-# SOME EXP.
+# ARTICOLI RAGGRUPPATI PER CATEGORIA
 
 <!-- INIZIO MENU CATEGORIE -->
 
