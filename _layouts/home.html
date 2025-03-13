@@ -6,7 +6,7 @@ layout: default
 {% assign contentwonl = content | strip_newlines %} {% unless contentwonl == ""  %} <br /> {% endunless %} <!-- add line break if there is any content -->
 
 
-<!-- MENU CATEGORIE 
+ <!-- MENU CATEGORIE -->
 {%- assign unique_categories = "" | split: "" -%}
 
 {%- for post in site.posts -%}
@@ -24,16 +24,16 @@ layout: default
     {%- assign total_length = 0 -%}
     {%- if unique_categories.size > 0 -%}
       {%- for category in unique_categories -%}
-        {%- assign total_length = total_length | plus: category.size | plus: 3 -%}   3 = 2 spaces + 1 dash
+        {%- assign total_length = total_length | plus: category.size | plus: 3 -%}   <!-- 3 = 2 spaces + 1 dash -->
       {%- endfor -%}
     {%- endif -%}
 
-     Linea superiore 
+    <!--  Linea superiore -->
     <div style="padding-bottom: 5px;">
       {%- for i in (0..total_length) -%}_ {%- endfor -%}
     </div>
 
-     Categorie con trattini 
+    <!-- Categorie con trattini -->
     <div style="display: inline;">
       |
       {%- if unique_categories.size > 0 -%}
@@ -48,13 +48,13 @@ layout: default
       |
     </div>
 
-     Linea inferiore 
+    <!-- Linea inferiore -->
     <div style="padding-top: 5px;">
       {%- for i in (0..total_length) -%}- {%- endfor -%}
     </div>
   </div>
 </center>
--->
+
 
 <!-- LISTA GENERALE DEI POST PINNED IN TUTTE LE CATEGORIE -->
 {%- if site.posts.size > 0 -%}
