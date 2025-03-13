@@ -1,11 +1,11 @@
-title: 'blackmida0x.github.io'
+title: '0xBlackmida.github.io'
 description: "Tech hub"
 baseurl: "/"
-url: "https://blackmida0x.github.io"
+url: "https://0xBlackmida.github.io"
 
 header_pages:
   - index.md
-  - lab.md
+  - cat.md
   #- about.md
   #- contact.md
 
