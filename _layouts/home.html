@@ -21,7 +21,7 @@ layout: default
   {%- if unique_categories.size > 0 -%}
     {%- for category in unique_categories -%}
       {%- if forloop.first == false -%} | {%- endif -%}
-       <a href="{{ site.baseurl }}/{{ category | downcase | replace: ' ', '-' }}" style="text-decoration: none !important;"> 🏷️{{ category }} </a>
+       <a href="{{ site.baseurl }}/{{ category | downcase | replace: ' ', '-' }}"> 🏷️{{ category }} </a>
     {%- endfor -%}
   {%- endif -%}
 </p>
