@@ -11,7 +11,7 @@ header_pages:
 
 style: dark
 
-footer: '<a href="https://x.com/">X</a> | <a href="https://github.com/">GitHub</a> | <a href="https://mirror.xyz/">Mirror</a>'
+footer: '<a href="https://x.com/0xblackmida/">X</a> | <a href="https://github.com/0xBlackmida/">GitHub</a>'
 
 # Build settings
 markdown: kramdown
